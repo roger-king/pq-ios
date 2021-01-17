@@ -15,6 +15,10 @@
 		DB7A8D2C25B4C8DB00E8D2DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A8D0125B4C8D900E8D2DF /* ContentView.swift */; };
 		DB7A8D2D25B4C8DB00E8D2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7A8D0225B4C8DB00E8D2DF /* Assets.xcassets */; };
 		DB7A8D2E25B4C8DB00E8D2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7A8D0225B4C8DB00E8D2DF /* Assets.xcassets */; };
+		DB7A8D4225B4CE3D00E8D2DF /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A8D4125B4CE3D00E8D2DF /* JoinView.swift */; };
+		DB7A8D4325B4CE3D00E8D2DF /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A8D4125B4CE3D00E8D2DF /* JoinView.swift */; };
+		DB7A8D5025B4E86C00E8D2DF /* ParticipantRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A8D4F25B4E86C00E8D2DF /* ParticipantRoom.swift */; };
+		DB7A8D5125B4E86C00E8D2DF /* ParticipantRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A8D4F25B4E86C00E8D2DF /* ParticipantRoom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		DB7A8D2225B4C8DB00E8D2DF /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7A8D2625B4C8DB00E8D2DF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		DB7A8D2825B4C8DB00E8D2DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB7A8D4125B4CE3D00E8D2DF /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		DB7A8D4F25B4E86C00E8D2DF /* ParticipantRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantRoom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,9 @@
 		DB7A8CFF25B4C8D900E8D2DF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DB7A8D5A25B4EC2700E8D2DF /* Views */,
+				DB7A8D4E25B4E84D00E8D2DF /* Models */,
 				DB7A8D0025B4C8D900E8D2DF /* pqApp.swift */,
-				DB7A8D0125B4C8D900E8D2DF /* ContentView.swift */,
 				DB7A8D0225B4C8DB00E8D2DF /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -149,6 +156,31 @@
 				DB7A8D2825B4C8DB00E8D2DF /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		DB7A8D4E25B4E84D00E8D2DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB7A8D5A25B4EC2700E8D2DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB7A8D5B25B4EC4200E8D2DF /* GameRoom */,
+				DB7A8D0125B4C8D900E8D2DF /* ContentView.swift */,
+				DB7A8D4125B4CE3D00E8D2DF /* JoinView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB7A8D5B25B4EC4200E8D2DF /* GameRoom */ = {
+			isa = PBXGroup;
+			children = (
+				DB7A8D4F25B4E86C00E8D2DF /* ParticipantRoom.swift */,
+			);
+			path = GameRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +340,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7A8D5025B4E86C00E8D2DF /* ParticipantRoom.swift in Sources */,
 				DB7A8D2B25B4C8DB00E8D2DF /* ContentView.swift in Sources */,
+				DB7A8D4225B4CE3D00E8D2DF /* JoinView.swift in Sources */,
 				DB7A8D2925B4C8DB00E8D2DF /* pqApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +351,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7A8D5125B4E86C00E8D2DF /* ParticipantRoom.swift in Sources */,
 				DB7A8D2C25B4C8DB00E8D2DF /* ContentView.swift in Sources */,
+				DB7A8D4325B4CE3D00E8D2DF /* JoinView.swift in Sources */,
 				DB7A8D2A25B4C8DB00E8D2DF /* pqApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
